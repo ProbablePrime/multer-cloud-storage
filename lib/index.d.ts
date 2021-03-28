@@ -27,5 +27,6 @@ export declare function storageEngine(opts?: StorageOptions & {
     filename?: any;
     hideFilename?: boolean;
     contentType?: ContentTypeFunction;
+    uniformBucketLevelAccess?: boolean;
 }): MulterGoogleCloudStorage;
 export declare type ContentTypeFunction = (req: Request, file: Express.Multer.File) => string | undefined;
